@@ -11,7 +11,11 @@ public class Dependecy_exercises {
         System.out.println("Please enter something.");
         String something = sc.nextLine();
         System.out.println("You entered " + something);
-        System.out.println("Is " + something + " a number: " + isNumeric(something));
+        if(isNumeric(something) == true){
+            System.out.println("You entered a number.");
+        }else{
+            System.out.println(something + " is not a number");
+        }
         System.out.println("Flipped caps: " + swapCase(something));
         System.out.println("Saying reversed: " + reverse(something));
 
